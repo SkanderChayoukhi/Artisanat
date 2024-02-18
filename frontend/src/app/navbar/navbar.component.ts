@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+
 import {MatIconModule} from '@angular/material/icon'
 import { AccountService } from '../services/accounts/account.service';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -9,8 +11,19 @@ import { AccountService } from '../services/accounts/account.service';
 export class NavbarComponent {
   authenticated :any
 showMe :boolean =true
+showDropdown = false;
+
 constructor(private accountService: AccountService){}
 
+@Output() onContactClick = new EventEmitter<void>();
+
+emitContactClick(): void {
+    this.onContactClick.emit();
+}
+
+toggleDropdown(): void {
+  this.showDropdown = !this.showDropdown; 
+}
 ngOnInit() {
   this.authenticated=localStorage.getItem("token")!=null
   this.accountService.getAuthenticated().subscribe((authenticated) => {

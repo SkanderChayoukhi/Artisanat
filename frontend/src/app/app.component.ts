@@ -8,7 +8,8 @@
 })
 export class AppComponent {
   title = 'marketplace';
-
+  scrollToContact(): void {
+    document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
-
 

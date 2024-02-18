@@ -51,12 +51,57 @@
   margin-left: 10px; /* This provides space between the navbar items */
 }
 
+.profile-item {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px; /* Adjust the padding as needed */
+  margin-left: 10px; /* This provides space between the navbar items */
+}
+
 .nav-item:hover {
   transform: scale(1.5); /* Adjust the scale factor as needed */
   transition: transform 0.3s ease-in-out; /* Smooth transition for the transform */
   text-decoration: underline;
 }
 
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 160px; /* Adjust the width as needed */
+  padding: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 100%; /* Position the dropdown right below the profile link/button */
+  margin-bottom: 2px; /* Adjust this value to move the dropdown further below */
+}
+
+.profile-dropdown .dropdown-content a {
+  color: rgb(44, 44, 44);
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgb(44, 44, 44); /* Add a border to the bottom of each link */
+}
+
+/* Remove border from the last item to avoid a double line at the bottom */
+.profile-dropdown .dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.profile-dropdown .dropdown-content a:hover {
+  background-color: #9a5faa;
+}
+.profile-dropdown .dropdown-content a i {
+  margin-right: 8px; /* Adjust the space between the icon and the text */
+}
 
 
 
