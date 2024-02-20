@@ -1,12 +1,118 @@
 .confirmation-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container-produits {
+  overflow-x: hidden;
+  overflow: hidden;
+  height: auto;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #e3baee;
+}
+
+.produiyet {
+  padding-top: 4vh;
+
+  width: 100vw;
+}
+
+
+
+.card {
+  margin-left: 5vw;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #f8dfff;
+  box-shadow: -1px 1px 13px 1px rgba(155, 114, 114, 0.81);
+  -webkit-box-shadow: -1px 1px 13px 1px rgba(155, 114, 114, 0.81);
+  -moz-box-shadow: -1px 1px 13px 1px rgba(155, 114, 114, 0.81);
+  border: none;
+  height: 400px;
+
+}
+
+.btn {
+  border: 5px solid;
+  border-image-slice: 1;
+  text-decoration: none;
+  transition: all .4s ease;
+  margin-top: 25px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgb(24, 192, 24);
+
+  box-shadow: #222 1px 0 10px;
+  transform: scale(1.1);
+}
+
+.filter {
+  transition: height 0.3s ease-in-out;
+  height: 250px;
+}
+
+
+.collapsed {
+  height: 0;
+  overflow: hidden;
+}
+
+.search {
+  width: 20vw;
+  margin-left: 37.5vw;
+  position: relative;
+  display: flex;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #cc86d5;
+  border-right: none;
+  padding: 5px;
+  height: 35px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+
+}
+
+.searchTerm:focus {
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #cc86d5;
+  background: #cc86d5;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+#filter{
+  border: none;
+  background-color: #e3baee;
+  padding-top:3px;
+}
+
+/*Resize the wrap to see the search bar change!*/
