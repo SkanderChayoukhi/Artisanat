@@ -15,15 +15,15 @@
         Cart <i class="fas fa-shopping-cart"></i>
       </a>
       <!-- Show Sign In if not authenticated -->
-      <a class="nav-item" *ngIf="!authenticated" routerLink="/signin">
+      <!-- <a class="nav-item" *ngIf="!authenticated" routerLink="/signin">
         Sign In <i class="fas fa-user"></i>
-      </a>
+      </a> -->
 
       <!-- Show Profile and dropdown if authenticated -->
-      <div *ngIf="authenticated" class="profile-item profile-dropdown">
+      <div class="profile-item profile-dropdown">
         <a (click)="toggleDropdown()">Profile <i class="fas fa-user"></i></a>
         <div *ngIf="showDropdown" class="dropdown-content">
-          <a href="#"><i class="fas fa-box-open"></i> My Products</a>
+          <a href="#" routerLink="/myproduct"><i class="fas fa-box-open"></i> My Products</a>
           <a href="#"><i class="fas fa-heart"></i> Favourite</a>
           <a href="#"><i class="fas fa-truck"></i> Track My <span style="padding-left: 30px;">Products</span></a>
           <a (click)="logout()"><i class="fas fa-sign-out-alt"></i> Sign Out</a>

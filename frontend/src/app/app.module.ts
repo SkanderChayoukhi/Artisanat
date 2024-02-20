@@ -47,6 +47,7 @@ import { BrandService } from './services/brand/brand.service';
 import { OrderService } from './services/order.service';
 import { ChatComponent } from './chat/chat.component';
 import { PriceRangeComponent } from './price-range/price-range.component';
+import { MyproductComponent } from './myproduct/myproduct.component';
 
 
 
@@ -79,6 +80,7 @@ import { PriceRangeComponent } from './price-range/price-range.component';
     ConfirmationDialogComponent,
     ChatComponent,
     PriceRangeComponent,
+    MyproductComponent,
   
   ],
   imports: [
