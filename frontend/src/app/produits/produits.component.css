@@ -109,5 +109,10 @@ html {
   cursor: pointer;
   font-size: 20px;
 }
+#filter{
+  border: none;
+  background-color: #e3baee;
+  padding-top:3px;
+}
 
 /*Resize the wrap to see the search bar change!*/
