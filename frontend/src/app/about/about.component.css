@@ -1,42 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-.about .services {
-    display: flex;
-    justify-content: center;
-}
-.about{
-    background-color:#f8f9fac7 ;
-}
-.about .services .serv {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
-    border-radius: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 15vw;
-    height: 15vh;
-    margin: 2rem;
-    padding-top: 1rem;
-    font-size: 1rem;
-    font-weight:900;
-}
-.about .services .serv:hover {
-    background-color: #17a2b8;
-    width: 20vw;
-    
-}
 
+.about{
+    background-color:#e3baee ;
+    padding: 5vh;
+}
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .product {
+    width: 150px; /* Adjust as needed */
+    text-align: center;
+  } 
+  .product img {
+    width: 100%;
+    height: 25vh;
+    border-radius: 50%;
+    background-color: #eacbeb; /* Light grey background */
+
+    padding: 20px; /* Adjust padding to make the circle larger or smaller */
+    box-sizing: border-box;
+  }
+  .product-title {
+    margin-top: 10px;
+    font-size: 16px; /* Adjust as needed */
+    color: #682F78;
+    font-weight:600;
+  }
+  .product-count {
+    font-size: 14px; /* Adjust as needed */
+    color: grey;
+  }
 .about h1 {
     text-align: center;
-    color: #54595F;
+    color: #682F78;
     font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 .about p {
+    padding-top: 3vh;
     text-align: center;
-    color: #54595F;
+    color: #86459f;
     font-weight: bold;
 }
 
@@ -44,4 +52,11 @@
 
     margin-bottom: 0.5rem;
 }
-
+.product-container a{
+   text-decoration: none;
+   color: inherit   ;
+}
+.product-container a:hover {
+    transform: scale(1.2 ); /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the transform */
+  }
