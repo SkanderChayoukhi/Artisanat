@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+.about{
+    background-color:#e3baee ;
+    padding: 5vh;
+}
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .product {
+    width: 150px; /* Adjust as needed */
+    text-align: center;
+  } 
+  .product img {
+    width: 100%;
+    height: 25vh;
+    border-radius: 50%;
+    background-color: #eacbeb; /* Light grey background */
+
+    padding: 20px; /* Adjust padding to make the circle larger or smaller */
+    box-sizing: border-box;
+  }
+  .product-title {
+    margin-top: 10px;
+    font-size: 16px; /* Adjust as needed */
+    color: #682F78;
+    font-weight:600;
+  }
+  .product-count {
+    font-size: 14px; /* Adjust as needed */
+    color: grey;
+  }
+.about h1 {
+    text-align: center;
+    color: #682F78;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about p {
+    padding-top: 3vh;
+    text-align: center;
+    color: #86459f;
+    font-weight: bold;
+}
+
+.about mat-icon {
+
+    margin-bottom: 0.5rem;
+}
+.product-container a{
+   text-decoration: none;
+   color: inherit   ;
+}
+.product-container a:hover {
+    transform: scale(1.2 ); /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the transform */
+  }

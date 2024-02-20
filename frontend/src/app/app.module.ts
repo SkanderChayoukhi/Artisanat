@@ -46,8 +46,8 @@ import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-
 import { BrandService } from './services/brand/brand.service';
 import { OrderService } from './services/order.service';
 import { ChatComponent } from './chat/chat.component';
-import { PriceRangeComponent } from './price-range/price-range.component';
-import { MyproductComponent } from './myproduct/myproduct.component';
+import { CartComponent } from './cart/cart.component';
+import { CartDialogComponent } from './cart-dialog/cart-dialog.component';
 
 
 
@@ -79,8 +79,8 @@ import { MyproductComponent } from './myproduct/myproduct.component';
     SendComponent,
     ConfirmationDialogComponent,
     ChatComponent,
-    PriceRangeComponent,
-    MyproductComponent,
+    CartComponent,
+    CartDialogComponent,
   
   ],
   imports: [
