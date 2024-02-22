@@ -24,8 +24,8 @@
       <div class="profile-item profile-dropdown">
         <a (click)="toggleDropdown()">Profile <i class="fas fa-user"></i></a>
         <div *ngIf="showDropdown" class="dropdown-content">
-          <a href="#"><i class="fas fa-box-open"></i> My Products</a>
-          <a href="#"><i class="fas fa-heart"></i> Favourite</a>
+          <a routerLink="/myproduct"><i class="fas fa-box-open"></i> My Products</a>
+          <a routerLink="/favourite"><i class="fas fa-heart"></i> Favourite</a>
           <a href="#"><i class="fas fa-truck"></i> Track My <span style="padding-left: 30px;">Products</span></a>
           <a (click)="logout()"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
         </div>
