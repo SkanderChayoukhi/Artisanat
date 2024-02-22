@@ -15,6 +15,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { ChatComponent } from './chat/chat.component';
 import { FooterComponent } from './footer/footer.component';
 import { MyproductComponent } from './myproduct/myproduct.component';
+import { FavouriteComponent } from './favourite/favourite.component';
+
 
 
 const routes: Routes = [
@@ -33,6 +35,8 @@ const routes: Routes = [
   { path: 'message/:id', component: MessagesComponent },
   { path: 'chat/:id', component: ChatComponent },
   { path: 'myproduct', component: MyproductComponent },
+  { path: 'favourite', component: FavouriteComponent },
+
 ];
 
 @NgModule({

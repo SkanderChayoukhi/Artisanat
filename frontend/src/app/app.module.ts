@@ -48,6 +48,7 @@ import { OrderService } from './services/order.service';
 import { ChatComponent } from './chat/chat.component';
 import { PriceRangeComponent } from './price-range/price-range.component';
 import { MyproductComponent } from './myproduct/myproduct.component';
+import { FavouriteComponent } from './favourite/favourite.component';
 
 
 
@@ -81,6 +82,7 @@ import { MyproductComponent } from './myproduct/myproduct.component';
     ChatComponent,
     PriceRangeComponent,
     MyproductComponent,
+    FavouriteComponent,
   
   ],
   imports: [
