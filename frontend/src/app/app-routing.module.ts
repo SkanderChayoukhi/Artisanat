@@ -16,6 +16,8 @@ import { ChatComponent } from './chat/chat.component';
 import { FooterComponent } from './footer/footer.component';
 import { MyproductComponent } from './myproduct/myproduct.component';
 import { FavouriteComponent } from './favourite/favourite.component';
+import { CartComponent } from './cart/cart.component';
+import { CartDialogComponent } from './cart-dialog/cart-dialog.component';
 
 
 
@@ -38,6 +40,10 @@ const routes: Routes = [
   { path: 'chat/:id', component: ChatComponent },
   { path: 'myproduct', component: MyproductComponent },
   { path: 'favourite', component: FavouriteComponent },
+  {path:'cart',component:CartComponent},
+  {path:'cart-dialog',component:CartDialogComponent},
+
+
  
 
 
