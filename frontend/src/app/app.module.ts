@@ -48,6 +48,10 @@ import { OrderService } from './services/order.service';
 import { ChatComponent } from './chat/chat.component';
 import { CartComponent } from './cart/cart.component';
 import { CartDialogComponent } from './cart-dialog/cart-dialog.component';
+import { PriceRangeComponent } from './price-range/price-range.component';
+import { MyproductComponent } from './myproduct/myproduct.component';
+import { FavouriteComponent } from './favourite/favourite.component';
+
 
 
 
@@ -81,6 +85,10 @@ import { CartDialogComponent } from './cart-dialog/cart-dialog.component';
     ChatComponent,
     CartComponent,
     CartDialogComponent,
+    PriceRangeComponent,
+    MyproductComponent,
+    FavouriteComponent,
+  
   
   ],
   imports: [

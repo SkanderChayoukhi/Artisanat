@@ -113,11 +113,142 @@
   <button class="btn btn-danger" >Delete</button>
 </div>
 
-          
-          <div class="card-footer"></div>
+
+            <div class="card-footer"></div>
+          </div>
+        </div>
+      </div>
+
+    </div> -->
+   
+<div class="container-produits">
+  <button style="float: left;">+</button>
+  <button id="filter" style="float: right;" (click)="toggleHeight()"><i class="fas fa-sliders-h"></i> Mask filters</button>
+
+
+
+  <div [class.collapsed]="isCollapsed" class="row filter" style="background-color: #edd9f1;">
+    <div class="col-lg-6 col-md-6 col-sm-12 mb-4"><label>Select an option:</label>
+      <div>
+        <label>
+          <input type="checkbox" name="options" value="Option 1">
+          Any
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="options" value="Option 2">
+          Hats
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="options" value="Option 3">
+          Pots
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="options" value="Option 4">
+          Bags
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="options" value="Option 5">
+          Embroidered Slippers
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="options" value="Option 6">
+          Embroidered clothes
+        </label>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+      <app-price-range></app-price-range>
+    </div>
+  </div>
+  <div class="search">
+    <input type="text" class="searchTerm" placeholder="What are you looking for?">
+    <button type="submit" class="searchButton">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+  <div class="row produiyet">
+    <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick exampl</p>
+          <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+          <a href="#" class="btn" style="margin-left: 8px;"><i class="fas fa-heart"></i> Favorite</a>
         </div>
       </div>
     </div>
-    
+
+    <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick exampl</p>
+          <a href="#" class="btn" style="margin-right: 8px;"><i class="fas fa-edit"></i> Edit</a>
+          <a href="#" class="btn"><i class="fa-solid fa-trash"></i>Delete</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick exampl</p>
+          <a href="#" class="btn" style="margin-right: 8px;"><i class="fas fa-edit"></i> Edit</a>
+          <a href="#" class="btn"><i class="fa-solid fa-trash"></i>Delete</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick exampl</p>
+          <a href="#" class="btn" style="margin-right: 8px;"><i class="fas fa-edit"></i> Edit</a>
+          <a href="#" class="btn"><i class="fa-solid fa-trash"></i>Delete</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick exampl</p>
+          <a href="#" class="btn" style="margin-right: 8px;"><i class="fas fa-edit"></i> Edit</a>
+          <a href="#" class="btn"><i class="fa-solid fa-trash"></i>Delete</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick exampl</p>
+          <a href="#" class="btn" style="margin-right: 8px;"><i class="fas fa-edit"></i> Edit</a>
+          <a href="#" class="btn"><i class="fa-solid fa-trash"></i>Delete</a>
+        </div>
+      </div>
+    </div>
   </div>
-  
+</div>

@@ -15,24 +15,30 @@ import { MessagesComponent } from './messages/messages.component';
 import { ChatComponent } from './chat/chat.component';
 import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
+import { MyproductComponent } from './myproduct/myproduct.component';
+import { FavouriteComponent } from './favourite/favourite.component';
+
 
 
 const routes: Routes = [
-{ path:'',component:HomepageComponent}, 
-{path:'about',component:AboutComponent},
-{path:'contact',component:FooterComponent},
-{path:'produits',component:ProduitsComponent},
-{path:'signup',component:SignupComponent},
-{path:'signin',component:SigninComponent},
-{path:'store',component:StoreComponent},
-{path:'search/:searchTerm',component:StoreComponent},
-{path:'product/:id',component:ProductPageComponent},
-{path:'orders',component:OrdersComponent},
-{path:'shops',component:ShoppingCardComponent},
-{path:'abc',component:NotFoundComponent},
-{path:'message/:id',component:MessagesComponent},
-{path:'chat/:id',component:ChatComponent},
-{path:'cart',component:CartComponent},
+  { path: '', component: HomepageComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: FooterComponent },
+  { path: 'produits', component: ProduitsComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'signin', component: SigninComponent },
+  { path: 'store', component: StoreComponent },
+  { path: 'search/:searchTerm', component: StoreComponent },
+  { path: 'product/:id', component: ProductPageComponent },
+  { path: 'orders', component: OrdersComponent },
+  { path: 'shops', component: ShoppingCardComponent },
+  { path: 'abc', component: NotFoundComponent },
+  { path: 'message/:id', component: MessagesComponent },
+  { path: 'chat/:id', component: ChatComponent },
+  { path: 'myproduct', component: MyproductComponent },
+  { path: 'favourite', component: FavouriteComponent },
+  {path:'cart',component:CartComponent},
+
 ];
 
 @NgModule({
