@@ -52,6 +52,7 @@ import { FavouriteComponent } from './favourite/favourite.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -83,6 +84,7 @@ import { FavouriteComponent } from './favourite/favourite.component';
     PriceRangeComponent,
     MyproductComponent,
     FavouriteComponent,
+  
   
   ],
   imports: [

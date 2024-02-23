@@ -19,6 +19,8 @@ import { FavouriteComponent } from './favourite/favourite.component';
 
 
 
+
+
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'about', component: AboutComponent },
@@ -36,6 +38,8 @@ const routes: Routes = [
   { path: 'chat/:id', component: ChatComponent },
   { path: 'myproduct', component: MyproductComponent },
   { path: 'favourite', component: FavouriteComponent },
+ 
+
 
 ];
 
