@@ -1,12 +1,11 @@
 <app-spinner></app-spinner>
 <div class="cont">
 	<div class="card">
-		<article class="filter-group">
+		<!-- <article class="filter-group">
 			<header class="card-header">
 				<a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
 					<i class="icon-control fa fa-chevron-down"></i>
 					<h6 class="title">Product type</h6>
-	
 				</a>
 			</header>
 			<div class="filter-content collapse show" id="collapse_1" >
@@ -21,43 +20,49 @@
 				<li (click)="onClickedCategory('wearable technology')">wearable technology</li>
 				<li (click)="onClickedCategory('All')">All</li>
 			  </ul>
-			  
-			  
-			  
-	
 				</div> 
 			</div>
-		</article> 
+		</article>  -->
 		<article class="filter-group">
 			<header class="card-header">
 				<a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true" class="">
 					<i class="icon-control fa fa-chevron-down"></i>
-					<h6 class="title">Brands </h6>
+					<h6 class="title">Categories </h6>
 				</a>
 			</header>
 			<div class="filter-content collapse show" id="collapse_2" >
 				<div class="card-body">
 					<label class="custom-control custom-checkbox">
-					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Asus')">
-					  <div class="custom-control-label">Asus
+					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Bags')">
+					  <div class="custom-control-label">Bags
 						  <b class="badge badge-pill badge-light float-right">120</b>  </div>
 					</label>
 					<label class="custom-control custom-checkbox">
-					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Apple')">
-					  <div class="custom-control-label" >Apple 
+					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Hats')">
+					  <div class="custom-control-label" >Hats 
 						  <b class="badge badge-pill badge-light float-right">15</b>  </div>
 					</label>
 					<label class="custom-control custom-checkbox">
-					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('dell')">
-					  <div class="custom-control-label">dell
+					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Pots')">
+					  <div class="custom-control-label">Pots
 						  <b class="badge badge-pill badge-light float-right">35</b> </div>
 					</label>
 					<label class="custom-control custom-checkbox">
-					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Samsung')">
-					  <div class="custom-control-label">Samsung 
+					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Embroidered Slippers')">
+					  <div class="custom-control-label">Embroidered Slippers 
 						  <b class="badge badge-pill badge-light float-right">89</b> </div>
 					</label>
-					
+					<label class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Embroidered clothes')">
+						<div class="custom-control-label">Embroidered clothes 
+							<b class="badge badge-pill badge-light float-right">89</b> </div>
+					</label>
+					<br>
+					<label class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('All')">
+						<div class="custom-control-label">All 
+							<b class="badge badge-pill badge-light float-right">89</b> </div>
+					</label>
 		</div> 
 			</div>
 		</article>
@@ -93,7 +98,7 @@
 			<div class="search">
 			   <input type="text" class="searchTerm" placeholder="What are you looking for?" (keyup)="onSearch($event)">
 			   <button type="submit" class="searchButton">
-				 <mat-icon>search</mat-icon>
+				<i class="fa fa-search"></i>
 			  </button>
 			</div>
 		 </div>
@@ -103,7 +108,7 @@
 	
 	   
 		<a [routerLink]="['/product', product.id]" class="containx">
-		  <div class="content" (click)="getProduit(product?.id, product)">
+		  <div class="content prd" (click)="getProduit(product?.id, product)">
 			<img [src]="Url+product.image" height="240" width="300" >
 			<div class="name" id="productName">{{ product.name }}</div>
 				<span class="favorite" [class.not]="!product.description">❤</span>

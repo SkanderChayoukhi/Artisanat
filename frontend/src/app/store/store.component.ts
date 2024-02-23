@@ -15,7 +15,48 @@ export class StoreComponent implements OnInit {
   sliderValue: number = 0;
   minValue: number = 100;
   maxValue: number = 5000;
-  products: Product[] = [];
+  products: Product[] = [
+    // {
+    //   id: 1,
+    //   name: "Wireless Headphones",
+    //   description: "High-quality sound with long-lasting battery life.",
+    //   price: 99,
+    //   quantity: 50,
+    //   rating: 4.5,
+    //   numberRatings: 234,
+    //   image: "wireless-headphones.jpg",
+    //   category: { id: 1, name: "Electronics", image: "electronics-category.jpg" },
+    //   brand: { id: 1, name: "SoundMagic", image: "soundmagic-brand.jpg" },
+    //   seller: { id: 1, username: "BestAudio", email: "contact@bestaudio.com", password: "secure123", address: "123 Audio Lane, Sound City", phoneNumber: "123-456-7890", image: "bestaudio-seller.jpg" },
+    // },
+    // {
+    //   id: 2,
+    //   name: "Smart Watch",
+    //   description: "Keep track of your fitness and notifications.",
+    //   price: 199,
+    //   quantity: 75,
+    //   rating: 4.3,
+    //   numberRatings: 150,
+    //   image: "smart-watch.jpg",
+    //   category: { id: 2, name: "Wearables", image: "wearables-category.jpg" },
+    //   brand: { id: 2, name: "TechGear", image: "techgear-brand.jpg" },
+    //   seller: { id: 2, username: "GadgetWorld", email: "info@gadgetworld.com", password: "gadget123", address: "456 Tech Road, Gadget City", phoneNumber: "987-654-3210", image: "gadgetworld-seller.jpg" },
+    // },
+    // {
+    //   id: 3,
+    //   name: "E-Reader",
+    //   description: "Enjoy your favorite books in a digital format.",
+    //   price: 129,
+    //   quantity: 40,
+    //   rating: 4.7,
+    //   numberRatings: 89,
+    //   image: "e-reader.jpg",
+    //   category: { id: 3, name: "Books", image: "books-category.jpg" },
+    //   brand: { id: 3, name: "ReadWell", image: "readwell-brand.jpg" },
+    //   seller: { id: 3, username: "BookLovers", email: "support@booklovers.com", password: "readbooks", address: "789 Reader's Street, Booktown", phoneNumber: "456-789-0123", image: "booklovers-seller.jpg" },
+    // },
+    // Add more products as per the structure above
+  ];
   filteredProducts: Product[] = [];
   searchMarque: string = '';
   filteredCategory:string='';
@@ -86,11 +127,6 @@ export class StoreComponent implements OnInit {
    
   }
 
-
-  
-
-
- 
   searchByMarque(searchmarque: string): void {
     this.searchMarque = searchmarque.trim();
     if (!this.searchMarque) {
