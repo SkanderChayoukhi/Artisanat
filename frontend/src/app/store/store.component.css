@@ -31,7 +31,7 @@
     align-items: center;
 }
 
-.containx{
+.prd{
     margin-left: 5vw;
     color: rgba(0, 0, 0, 0.8);
     background-color: #f8dfff;
@@ -39,7 +39,8 @@
     -webkit-box-shadow: -1px 1px 13px 1px rgba(155, 114, 114, 0.81);
     -moz-box-shadow: -1px 1px 13px 1px rgba(155, 114, 114, 0.81);
     border: none;
-    height: 70vh;
+    height: auto;
+    margin-top: 3vw;
 }
 
 /* .containx{
