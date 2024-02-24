@@ -31,6 +31,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   -Right Click on the file and Run as Java Application
 ### You are all Set
 ## Demo : 
-[![Artisanat](./images/Coverimage)](https://youtu.be/ho2X0byWYUw)
+[![Artisanat](./images/Coverimage.png)](https://youtu.be/ho2X0byWYUw)
 
 
