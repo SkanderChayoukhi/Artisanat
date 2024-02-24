@@ -1,0 +1,18 @@
+/* cart-dialog.component.css */
+.cart-dialog-container {
+    padding: 20px;
+  }
+  
+  .cart-dialog-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .cart-dialog-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-dialog-container li {
+    margin-bottom: 5px;
+  }
+  
