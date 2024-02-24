@@ -9,7 +9,7 @@
     <div class="navbar-nav">
       <a class="nav-item" routerLink="/">Home</a>
       <a class="nav-item" routerLink="/about">About</a>
-      <a class="nav-item" routerLink="/produits">Products</a>
+      <a class="nav-item" routerLink="/store">Products</a>
       <a class="nav-item" (click)="emitContactClick()">Contact</a>
       <a class="nav-item" (click)="openCart()">
         Cart <i class="fas fa-shopping-cart">
@@ -24,7 +24,7 @@
       <div *ngIf="!authenticated" class="profile-item profile-dropdown">
         <a (click)="toggleDropdown()">Profile <i class="fas fa-user"></i></a>
         <div *ngIf="showDropdown" class="dropdown-content">
-          <a routerLink="/store"><i class="fas fa-box-open"></i> My Products</a>
+          <a routerLink="/produits"><i class="fas fa-box-open"></i> My Products</a>
           <a routerLink="/favourite"><i class="fas fa-heart"></i> Favourite</a>
           <a routerLink="/orders"><i class="fas fa-truck"></i> Track My <span style="padding-left: 30px;">Products</span></a>
           <a (click)="logout()"><i class="fas fa-sign-out-alt"></i> Sign Out</a>

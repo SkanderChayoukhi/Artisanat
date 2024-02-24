@@ -26,7 +26,7 @@
 		<article class="filter-group">
 			<header class="card-header">
 				<a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true" class="">
-					<i class="icon-control fa fa-chevron-down"></i>
+					
 					<h6 class="title">Categories </h6>
 				</a>
 			</header>
@@ -35,33 +35,33 @@
 					<label class="custom-control custom-checkbox">
 					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Bags')">
 					  <div class="custom-control-label">Bags
-						  <b class="badge badge-pill badge-light float-right">120</b>  </div>
+						  <b class="badge badge-pill badge-light float-right">189</b>  </div>
 					</label>
 					<label class="custom-control custom-checkbox">
 					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Hats')">
 					  <div class="custom-control-label" >Hats 
-						  <b class="badge badge-pill badge-light float-right">15</b>  </div>
+						  <b class="badge badge-pill badge-light float-right"><span id="bb">1899</span></b>  </div>
 					</label>
 					<label class="custom-control custom-checkbox">
 					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Pots')">
 					  <div class="custom-control-label">Pots
-						  <b class="badge badge-pill badge-light float-right">35</b> </div>
+						  <b class="badge badge-pill badge-light float-right"></b> </div>
 					</label>
 					<label class="custom-control custom-checkbox">
 					  <input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Embroidered Slippers')">
 					  <div class="custom-control-label">Embroidered Slippers 
-						  <b class="badge badge-pill badge-light float-right">89</b> </div>
+						  <b class="badge badge-pill badge-light float-right"></b> </div>
 					</label>
 					<label class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('Embroidered clothes')">
 						<div class="custom-control-label">Embroidered clothes 
-							<b class="badge badge-pill badge-light float-right">89</b> </div>
+							<b class="badge badge-pill badge-light float-right"></b> </div>
 					</label>
 					<br>
 					<label class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" (change)="onCheckboxChange('All')">
 						<div class="custom-control-label">All 
-							<b class="badge badge-pill badge-light float-right">89</b> </div>
+							<b class="badge badge-pill badge-light float-right"></b> </div>
 					</label>
 		</div> 
 			</div>
@@ -69,7 +69,6 @@
 		<article class="filter-group">
 			<header class="card-header">
 			  <a href="#" data-toggle="collapse" data-target="#collapse_3" aria-expanded="true" class="">
-				<i class="icon-control fa fa-chevron-down"></i>
 				<h6 class="title">Price range</h6>
 			  </a>
 			</header>
@@ -114,7 +113,6 @@
 				<span class="favorite" [class.not]="!product.description">❤</span>
 				
 			<div class="name" ><strong id="title">Category:   </strong> {{product.category?.name}}</div>
-			<div class="name"><strong id="title">Brand:</strong> {{product.brand?.name}}</div> 
 			
 			<div class="name">
 				<strong id="title">Quantity:</strong>

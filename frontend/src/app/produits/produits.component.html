@@ -1,4 +1,5 @@
-<!-- <app-spinner></app-spinner>
+<app-spinner></app-spinner>
+<div class="tout">
 <div class="container" [ngStyle]="{ 'display': showConfirmationSection ? 'none' : 'block' }">
   <div class="row">
     <div class="col-lg-7">
@@ -50,7 +51,7 @@
           }}
         </div>
         <div class="card-body">
-          <div *ngIf="operation=='add' ||operation =='edit'"></div>
+          <div  *ngIf="operation=='add' ||operation =='edit'"></div>
           <div class="container" style="margin-top: 20px;">
 
             <div class="panel-body">
@@ -108,7 +109,7 @@
                 <br>
                 <button class="btn btn-success" [disabled]="produitForm.pristine || produitForm.invalid"
                   (click)="operation=='add' ? addData(): updateProduit()">
-                  ajouter
+                  ADD
                 </button>
               </form>
             </div>
@@ -125,9 +126,9 @@
         </div>
       </div>
 
-    </div> -->
-   
-<div class="container-produits">
+    </div>
+  </div>
+<!-- <div class="container-produits">
   <button style="float: left;">+</button>
   <button id="filter" style="float: right;" (click)="toggleHeight()"><i class="fas fa-sliders-h"></i> Mask filters</button>
 
@@ -257,4 +258,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
