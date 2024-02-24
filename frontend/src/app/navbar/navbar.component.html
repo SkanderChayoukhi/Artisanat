@@ -17,8 +17,8 @@
       <a class="nav-item" (click)="emitContactClick()">Contact</a>
 
       <!-- Show Sign In if not authenticated -->
-      <a class="nav-item" *ngIf="authenticated" routerLink="/signin">
-        Sign In <i class="fas fa-user"></i>
+      <a class="nav-item" *ngIf="!authenticated" routerLink="/signin">
+        Sign In/Up <i class="fas fa-user"></i>
       </a>
       <!-- <a class="nav-item" *ngIf="!authenticated" routerLink="/signup">
         Sign Up <i class="fas fa-user"></i>
