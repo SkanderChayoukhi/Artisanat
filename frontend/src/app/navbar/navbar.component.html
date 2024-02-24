@@ -18,11 +18,11 @@
 
       <!-- Show Sign In if not authenticated -->
       <a class="nav-item" *ngIf="!authenticated" routerLink="/signin">
-        Sign In <i class="fas fa-user"></i>
+        Sign In/Up <i class="fas fa-user"></i>
       </a>
-      <a class="nav-item" *ngIf="!authenticated" routerLink="/signup">
+      <!-- <a class="nav-item" *ngIf="!authenticated" routerLink="/signup">
         Sign Up <i class="fas fa-user"></i>
-      </a>
+      </a> -->
 
       <!-- Show Profile and dropdown if authenticated -->
       <div *ngIf="authenticated" class="profile-item profile-dropdown">
