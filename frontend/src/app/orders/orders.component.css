@@ -1,0 +1,25 @@
+.p-5{
+    background-color: #e3baee;
+}
+
+.p-5 h1{
+    color: #682F78;
+    font-weight: bold;
+}
+
+.header-row {
+    background-color: #efdaf5; /* Blue background for header rows */
+    color: white; /* White text color */
+}
+
+.body-row, .table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f2f2f2; /* Light grey background for body rows */
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) .body-row {
+    background-color: #f2f2f2; /* Ensure odd rows have the correct background even within nested structure */
+}
+
+.table-striped>tbody>tr:nth-of-type(even) .body-row {
+    background-color: white; /* Ensure even rows have a different background if needed */
+}

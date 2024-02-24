@@ -11,12 +11,12 @@
       <a class="nav-item" routerLink="/about">About</a>
       <a class="nav-item" routerLink="/store">Products</a>
       <a class="nav-item" (click)="emitContactClick()">Contact</a>
-      <a class="nav-item" *ngIf="authenticated" (click)="openCart()">
+      <a class="nav-item" *ngIf="!authenticated" routerLink="/shops">
         Cart <i class="fas fa-shopping-cart">
         </i>
       </a>
       <!-- Show Sign In if not authenticated -->
-      <a class="nav-item" *ngIf="authenticated" routerLink="/signin">
+      <a class="nav-item" *ngIf="!authenticated" routerLink="/signin">
         Sign In <i class="fas fa-user"></i>
       </a>
 
