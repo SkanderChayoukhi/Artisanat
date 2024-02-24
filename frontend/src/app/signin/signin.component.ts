@@ -9,40 +9,36 @@ import { Router } from '@angular/router';
   styleUrls: ['./signin.component.css']
 })
 export class SigninComponent implements OnInit {
-  signupUsers: any[] =[];
-  signupObj: any={
-      userName: '',
-      email:'',
-      password: ''
-  };
-  loginObj: any ={
-      userName: '',
-      password: ''
-  };
+  private authenticated :boolean=false;
+  signinForm: FormGroup;
+  constructor(private fb: FormBuilder, private accountService:AccountService,private router:Router) {
+    this.signinForm = this.fb.group({
+      username: ['', Validators.required],
+      password: ['', Validators.required],
+    });
+  }
+  ngOnInit() {
+    const token = localStorage.getItem('token');
+    this.authenticated = !!token; 
+  }
+  login(){
 
-  constructor() {}
-  ngOnInit(): void{
-      const localData = localStorage.getItem('signUpUsers');
-      if (localData != null){
-          this.signupUsers = JSON.parse(localData);
-      }
+    this.accountService
+      .login(this.signinForm
+      .get('username')?.value,this.signinForm
+      .get('password')?.value)
+      .subscribe((res)=>{
+        console.log(res.token);
+        localStorage.setItem('token',res.token)
+        localStorage.setItem('username',this.signinForm.get('username')?.value)
+        this.accountService.setAuthenticated(true);
+        this.router.navigate(['/'])
+       
+      },(error)=>{
+        if(error.status)
+        console.log()
+        
+      })
   }
-  onSignUp(){
-      this.signupUsers.push(this.signupObj);
-      localStorage.setItem('signUpUsers', JSON.stringify(this.signupUsers));
-      this.signupObj={
-          userName: '',
-          email:'',
-          password: ''
-      };
-  }
-  onLogin(){
-      // debugger
-      const isUserExist = this.signupUsers.find(m => m.userName == this.loginObj.userName && m.password == this.loginObj.password);
-      if (isUserExist != undefined) {
-          alert('User Login Successfully');
-      } else {
-          alert('Wrong Credentials');
-      }
-  }
+
 }
