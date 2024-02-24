@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-.welcome{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: -6%;
-    font-size: 3rem;
-}
+
 .card-header bg-info text-white{
     background-color:#0a3c4a;
     margin-left: 30%;
@@ -21,12 +15,24 @@ label{
     height: 60vh;
 }
 .contain{
-    height: 80vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* min-height: auto; */
+    height: 110vh;
+    font-family: 'Jost', sans-serif;
+    /* background: linear-gradient(to bottom, #c5c4ce, #7d498b, #ac62c0);  */
+    background-color: #e3baee;
 }
 .btn{
-    background-color: #fd7e14;
-    border-color: #fd7e14;
+    background-color: #682F78;
+    border-color: #682F78;
     margin-left: 40%;
     font-size: 1.2em;
     margin-top: 3%;
 }
+
+
+

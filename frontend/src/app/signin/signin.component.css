@@ -1,12 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-.welcome{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: -6%;
-    font-size: 3rem;
+.contain{
+    margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: auto;
+	font-family: 'Jost', sans-serif;
+	 /* background: linear-gradient(to bottom, #c5c4ce, #7d498b, #ac62c0);  */
+	 background-color: #e3baee;
 }
-.card-header bg-info text-white{
+.card{
+	width: 350px;
+	height: 450px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+	/* background: linear-gradient(to bottom, #a07da5, #7d498b, #682F78) */
+	background-color: #eee;
+    margin-bottom: 50px;
+    margin-top: 50px;
+	position: relative;
+	right: -20%;
+	justify-content: center;
+	text-align: center;
+
+
+}
+
+.card-body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-info {
+    background-color: #682F78;
+}
+.form-group{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+.btn{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #3b1446;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+.btn:hover{
+	background: #682F78
+}
+/* .card-header bg-info text-white{
     background-color:#0a3c4a;
     margin-left: 30%;
 }
@@ -29,4 +96,4 @@ label{
     margin-left: 40%;
     font-size: 1.2em;
     margin-top: 3%;
-}
+} */
