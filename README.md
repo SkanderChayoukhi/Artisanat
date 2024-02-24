@@ -1,4 +1,6 @@
 # Artisanat 
+![Homepage](https://github.com/SkanderChayoukhi/Artisanat/assets/138572009/caa90ef9-07f8-4a0d-8764-f95ccbde7df9)
+
 ## Getting Started
 This project is a simple e-commerce website powered by Angular 17 on the frontend and Spring Boot for the backend.
 For the database we used MongoDB.
