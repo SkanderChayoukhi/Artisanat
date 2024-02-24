@@ -1,10 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-.welcome{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: -6%;
-    font-size: 3rem;
+.body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	font-family: 'Jost', sans-serif;
+	 /* background: linear-gradient(to bottom, #c5c4ce, #7d498b, #ac62c0);  */
+	 background-color: #e3baee;
+}
+.card{
+	width: 450px;
+	height: auto;
+	overflow: hidden;
+	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+	/* background: linear-gradient(to bottom, #a07da5, #7d498b, #682F78) */
+	background-color: #682F78;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    
+
+}
+input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
 }
 .card-header bg-info text-white{
     background-color:#0a3c4a;
@@ -24,8 +54,8 @@ label{
     height: 80vh;
 }
 .btn{
-    background-color: #fd7e14;
-    border-color: #fd7e14;
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
     margin-left: 40%;
     font-size: 1.2em;
     margin-top: 3%;
