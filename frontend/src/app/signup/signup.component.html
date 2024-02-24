@@ -1,9 +1,9 @@
 <app-spinner></app-spinner>
-<div class="contain">
-    <div  class="col-lg-5">
-            <div class="card">
-                <div class="card-header bg-info text-white">
-                <a routerLink="/signin"> SignIn</a>
+<div class="contain" style="margin-top:0px ; ">
+    <div  class="col-lg-5" >
+            <div class="card" >
+                <div class="card-header bg-info text-white" style="background-color: #682F78 !important;;">
+                <a  routerLink="." style="color: white; text-decoration: none;"> SignUp</a>/<a routerLink="/signin" style="color: white; text-decoration: none;"> SignIn</a>
             </div>
             <div class="card-body">
                 <form  [formGroup]="signupForm">
@@ -46,7 +46,8 @@
                     <button class="btn btn-success" [disabled]="signupForm.pristine||signupForm.invalid" (click)="signup()">Sign Up</button>
                 </form>
             </div>
-            <a class="signin" routerLink="."> SignIn</a>
-            </div>
+            <div class="card-footer"></div>
+        </div>
     </div>
+</div>
    
